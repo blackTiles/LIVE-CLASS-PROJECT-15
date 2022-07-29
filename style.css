@@ -314,7 +314,7 @@ footer{
 .footer-inner .footer-logo{
     width: 150px;
     height: 50px;
-    background: url('/images/nav-logo.jpg') 100% 100% center cover;
+    background: url('./images/nav-logo.jpg') 100% 100% center cover;
     position: relative;
 }
 .footer-inner .footer-logo img{

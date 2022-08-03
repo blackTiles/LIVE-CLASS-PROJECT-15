@@ -15,12 +15,16 @@
                 <img src="./images/nav-logo.jpg" alt="">
             </div>
             <ul class="nav-items">
+                <li class="close-btn" onclick="closeNav()" style="font-size: 35px;">&times;</li>
                 <li class="nav-item">Home <i class="fa-solid fa-caret-down"></i></li>
                 <li class="nav-item">Product</li>
                 <li class="nav-item">About</li>
                 <li class="nav-item">Contact</li>
                 <li class="nav-item">Other Page <i class="fa-solid fa-caret-down"></i></li>
             </ul>
+            <div class="hamburger">
+                <span onclick="openNav()" style="font-size: 35px;">&#9776;</span>
+            </div>
         </nav>
         <section class="hero-page">
             <div class="hero-page-left">
@@ -141,5 +145,14 @@
             
         </footer>
     </div>
+    <script>
+        function openNav() {
+          document.querySelector(".nav-items").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.querySelector(".nav-items").style.width = "0";
+        }
+    </script>
 </body>
 </html>
